@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ayan Paul's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Portfolio</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/Ayan1.jpg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Ayan Paul</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Student ',
+						'Engineer ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Fullstack Web Developer</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+                            <a href="https://leetcode.com/u/ayanpaul14/" class="btn btn-white btn-outline-white py-3 px-4">leetcode</a></p>
+							<a href="https://github.com/shershaah14/FUTURE_FS_01" class="btn btn-white btn-outline-white py-3 px-4">github</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+   
+						
+		<div class="col-md-12 col-lg-7 pl-lg-5 pb-5">
+	<div class="row align-items-center pb-3">
+		<div class="col-md-12 heading-section ftco-animate">
+
+	<h1 class="big" id="about-section">About</h1>
+	<h2 class="mb-4">About Me</h2>
+	<hr style="width: 300px; height: 3px; background-color: #007bff; border: none; margin: 30px 0;">
+
+	<p style="text-align: center;">
+		I’m a passionate and curious B.Tech CSE student from Brainware University. I enjoy solving real-world problems using technology and continuously strive to enhance my skills in programming, development, and emerging fields like Artificial Intelligence and Machine Learning.
+	</p>
+
+	<ul class="about-info-custom">
+		<li><span class="label">Profile:</span>&nbsp;<span>Computer Science &amp; Engineering</span></li>
+		<li><span class="label">Programming Languages:</span> &nbsp;<span> C, C++, Python, Java</span></li>
+		<li><span class="label">Web Development:</span>&nbsp;<span>HTML, CSS, React.js, Node.js</span></li>
+		<li><span class="label">Databases:</span>&nbsp;<span>MySQL, MongoDB</span></li>
+		<li><span class="label">Tools &amp; Platforms:</span>&nbsp;<span>GitHub, VS Code, LeetCode</span></li>
+		<li><span class="label">Other Skills:</span>&nbsp;<span>Data Structures &amp; Algorithms, Object-Oriented Programming, Operating Systems, Excel</span></li>
+		<li><span class="label">Interests:</span>&nbsp;<span>Drawing, Football, Photography</span></li>
+	</ul>
+	<style>
+	.about-info-custom {
+		list-style: none;
+		padding: 0;
+		margin: 30px 0 0 0;
+		max-width: 600px;
+	}
+	.about-info-custom li {
+		display: flex;
+		margin-bottom: 12px;
+		font-size: 17px;
+	}
+	.about-info-custom .label {
+		min-width: 180px;
+		font-weight: 600;
+		color: #007bff;
+		display: inline-block;
+	}
+	.about-info-custom span:last-child {
+		color: #ede7e7;
+	}
+	@media (max-width: 600px) {
+		.about-info-custom li {
+			flex-direction: column;
+			font-size: 15px;
+		}
+		.about-info-custom .label {
+			min-width: 0;
+			margin-bottom: 2px;
+		}
+	}
+	</style>
+	</div>
+	</div>
+	</div>
+
+
+	
+	<section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+			<p>Here are some of my projects that I have worked on:</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://sher3.odoo.com/" class="block-20 zoom-effect" style="background-image: url('images/Ecommercestore.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://sher3.odoo.com/">A mini E-commerce platform</a></h3>
+				<p>Developed a mini e-commerce platform enabling users to browse, search, and purchase products online with a seamless shopping experience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="" class="block-20 zoom-effect" style="background-image: url('images/portfolioss.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="">Creating my personal professional Portfolio</a></h3>
+				<p>Designed and developed a personal portfolio website to showcase my projects, skills, and achievements as a web developer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="" class="block-20 zoom-effect" style="background-image: url('images/rebrand.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="">Rebrand a famous Brand's website using AI</a></h3>
+				<p>Utilized AI tools to redesign and modernize a well-known brand’s website, enhancing user experience, visual appeal, and accessibility through intelligent automation and creative design solutions.</p>
+              </div>
+            </div>
+		  </div>
+		  <div class="col-md-12 d-flex justify-content-center ftco-animate">
+			<div class="blog-entry" style="max-width: 350px; width: 100%;">
+			  <a href="https://leetcode.com/u/ayanpaul14/" class="block-20 zoom-effect" style="background-image: url('images/leetcode.png');">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+				<h3 class="heading"><a href="https://leetcode.com/u/ayanpaul14/">LeetCode Problem Solving & Coding Practice</a></h3>
+				<p>Practiced and solved numerous coding problems on LeetCode to strengthen my problem-solving skills and deepen my understanding of algorithms and data structures.</p>
+			  </div>
+			</div>
+		  </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		
+	
+
+		<section class="ftco-section" id="education-section">		
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023-2027</span>
+    					<h2>Bachelor of Technology in Computer Science and Engineering</h2>
+    					<span class="position">Brainware University</span>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-2023</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Bagati Ramgopal Ghosh High(H.S) School</span>
+    				</div>
+				</div>
+    		</div>
+
+
+
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024-2025</span>
+						<h2>CSE Student</h2>
+						<span class="position">TCS iON</span>
+						<p class="mt-4">Successfully completed TCS iON Career Edge-Young Professional course, gaining hands-on experience in machine learning algorithms, overview of Artificial Intelligence, business Etiquette and IT foundational skills.</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2025</span>
+						<h2>Full Stack Web Developer</h2>
+						<span class="position">Future Interns</span>
+						<p class="mt-4"></p>
+							Worked as a Full Stack Web Developer, building and maintaining dynamic web applications using modern technologies across the frontend and backend. Collaborated with teams to deliver scalable solutions and enhance user experience.
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+   
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>West Bengal, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">8017926684</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">ayanpaul626@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/ayan-paul-0b63a2336/?trk=opento_sprofile_details"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://www.facebook.com/share/1LUKE9YoPF/"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/.shershaah.?igsh=ZmZtdjYxMTdmejI1"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
